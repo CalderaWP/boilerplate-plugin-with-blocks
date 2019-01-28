@@ -10,6 +10,8 @@ Install: `yarn install`
     - WordPress will automatically detect and load the script from the dev server based on the presence of the `asset-manifest.json` the dev server outputs into the build directory. Hot reloading is only provided while the dev server is running.
 * Build for production
     - `yarn build`
+* Run Jest test watcher
+    - `yarn test`
 * Start storybook
     - `yarn storybook` 
 
