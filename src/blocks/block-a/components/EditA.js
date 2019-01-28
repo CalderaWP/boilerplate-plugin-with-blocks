@@ -4,11 +4,13 @@ export const EditA = ({message,onChangeMessage,useBold,onChangeBold}) =>
 	 (
 		<div>
 			<TextControl
+				className={'edit-a-message'}
 				label={'The Message'}
 				value={message}
 				onChange={onChangeMessage}
 			/>
 			<RadioControl
+				className={'edit-a-use-bold'}
 				options={ [
 					{ label: 'Bold', value: true },
 					{ label: 'No Special Style', value: false },
