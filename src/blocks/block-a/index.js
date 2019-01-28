@@ -1,5 +1,17 @@
+import {DisplayA} from "./components/DisplayA";
+import {InspectorControls} from '@wordpress/editor';
+import {EditA} from "./components/EditA";
 export const name = 'hmr-demo/block-a';
-
+const attributes = {
+	message: {
+		type: 'string',
+		default: 'Type your message'
+	},
+	useBold: {
+		type: 'boolean',
+		default: false,
+	}
+}
 export const options = {
 	title: 'Sample Block A',
 
@@ -8,20 +20,27 @@ export const options = {
 	icon: 'image-filter',
 
 	category: 'widgets',
-
-	edit() {
-		return (
-			<div>
-				<h2>Block A preview</h2>
-			</div>
-		);
+	attributes,
+	edit({isSelected,attributes,setAttributes}) {
+		const {message,useBold} = attributes;
+		const onChangeMessage = (message ) => setAttributes({message});
+		const onChangeBold = (useBold ) => setAttributes({useBold});
+		if( isSelected){
+			return <DisplayA
+				message={message}
+				useBold={useBold}
+			/>
+		}
+		return <InspectorControls>
+			<EditA useBold={useBold} message={message} onChangeBold={onChangeBold} onChangeMessage={onChangeMessage}/>
+		</InspectorControls>
 	},
 
-	save() {
-		return (
-			<div>
-				<h2>Block A!</h2>
-			</div>
-		);
+	save({attributes}) {
+		const {message,useBold} = attributes;
+		return <DisplayA
+			message={message}
+			useBold={useBold}
+		/>
 	},
 };
