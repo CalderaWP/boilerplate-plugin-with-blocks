@@ -20,6 +20,20 @@ Before using this boilerplate, you must have the following installed:
 - [Composer](https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md)
 
 
+## Using This Boilerplate
+* Download the latest version to your local computer.
+* decided on naming conventions for plugin slug, root namespace and vendor prefix.
+    - `boilerplate-plugin-with-blocks` is the plugin slug in boilerplate. This would change to `cf-sprinkles` if you were creating a plugin for Caldera Forms and a service called "spinkles".
+    - `CalderaPluginBoilerPlate` is the root namespace in the boilerplate.
+    - `calderawp` is the vendor prefix in the boilerplate. Please do not use `calderawp` for third-party add-ons.
+* Search and replace `CalderaPluginBoilerPlate` with the root namespace of your plugin.
+* Change the directory and main plugin file name to match the plugin slug.
+* If you are not working for Calderawp, change the vendor prefix in composer.json to your company's name.
+* Update the plugin name in readme.txt, composer.json and package.json
+* Install `yarn && composer install`
+* Delete boilerplate-related instructions in the README.
+* Develop great plugin.
+
 ## PHP
 PHP code should be in the directory `php` and follow the [PSR-4 Standard](https://www.php-fig.org/psr/psr-4/) for class, filename and directory naming, because we are using the [composer autoloader](https://getcomposer.org/doc/01-basic-usage.md#autoloading).
 
