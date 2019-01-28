@@ -20,6 +20,40 @@ Before using this boilerplate, you must have the following installed:
 - [Composer](https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md)
 
 
+
+
+## Using This Boilerplate
+* Download the latest version to your local computer.
+* decided on naming conventions for plugin slug, root namespace and vendor prefix.
+    - `boilerplate-plugin-with-blocks` is the plugin slug in boilerplate. This would change to `cf-sprinkles` if you were creating a plugin for Caldera Forms and a service called "spinkles".
+    - `CalderaPluginBoilerPlate` is the root namespace in the boilerplate.
+    - `calderawp` is the vendor prefix in the boilerplate. Please do not use `calderawp` for third-party add-ons.
+* Search and replace `CalderaPluginBoilerPlate` with the root namespace of your plugin.
+* Change the directory and main plugin file name to match the plugin slug.
+* If you are not working for Calderawp, change the vendor prefix in composer.json to your company's name.
+* Update the plugin name in readme.txt, composer.json and package.json
+* Install `yarn && composer install`
+* Delete boilerplate-related instructions in the README.
+* Develop great plugin.
+
+## Developing With This Boilerplate
+JavaScript goes in `src/`. Test files should be located in the same directory as the unit they test. File name should include `.test.js`.
+
+PHP goes in `php/`. PHP classes, directories, file naming should follow the psr-4 standard.
+### JavaScript
+* 2 blocks and 2 plugin sidebars are included.
+* Block a has example components, tests and stories.
+* To add a new block, add a directory to `src/blocks` and add an index.js file in that directory.
+* To add a new plugin sidebar, add a directory to `src/blocks` and add an index.js file in that directory.
+* Client-side registration of blocks and server-side registration of assets is already handled.
+
+### PHP
+A main plugin class is provided. As is setup for automated testing. It is possible that your plugin has no PHP code besides loading assets. If so, this is an over-complication.
+
+* Unit tests should be located in `tests/Unit`.
+* Integration tests should be located in `tests/Integration`.
+* Acceptance tests should be located in `tests/Acceptance`.
+
 ## Recommended Reading
 ### Gutenberg Setup
 * https://www.ibenic.com/integrating-gutenberg-blocks-in-plugins/ 
@@ -40,19 +74,6 @@ Before using this boilerplate, you must have the following installed:
 * https://www.ibenic.com/using-composer-for-libraries-in-wordpress-plugins-or-themes/
 * https://torquemag.io/2017/07/practical-guide-unit-testing-code/
 
-## Using This Boilerplate
-* Download the latest version to your local computer.
-* decided on naming conventions for plugin slug, root namespace and vendor prefix.
-    - `boilerplate-plugin-with-blocks` is the plugin slug in boilerplate. This would change to `cf-sprinkles` if you were creating a plugin for Caldera Forms and a service called "spinkles".
-    - `CalderaPluginBoilerPlate` is the root namespace in the boilerplate.
-    - `calderawp` is the vendor prefix in the boilerplate. Please do not use `calderawp` for third-party add-ons.
-* Search and replace `CalderaPluginBoilerPlate` with the root namespace of your plugin.
-* Change the directory and main plugin file name to match the plugin slug.
-* If you are not working for Calderawp, change the vendor prefix in composer.json to your company's name.
-* Update the plugin name in readme.txt, composer.json and package.json
-* Install `yarn && composer install`
-* Delete boilerplate-related instructions in the README.
-* Develop great plugin.
 
 ## PHP
 PHP code should be in the directory `php` and follow the [PSR-4 Standard](https://www.php-fig.org/psr/psr-4/) for class, filename and directory naming, because we are using the [composer autoloader](https://getcomposer.org/doc/01-basic-usage.md#autoloading).
@@ -97,4 +118,4 @@ Install: `yarn install`
 ## License
 This is based on [a demo](https://github.com/kadamwhite/wp-block-hmr-demo) and [blog post](https://humanmade.com/2018/11/26/hot-module-replacement-for-gutenberg-blocks/) by [K Adam White](http://www.kadamwhite.com).
 
-This plugin is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](LICENSE.md#gnu-general-public-license) as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version, or
+This plugin is free software, licensed under the terms of the [GNU General Public License](LICENSE.md#gnu-general-public-license) as published by the Free Software Foundation, version 2. Please share with your neighbors.
