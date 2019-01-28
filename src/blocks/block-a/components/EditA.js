@@ -17,7 +17,9 @@ export const EditA = ({message,onChangeMessage,useBold,onChangeBold}) =>
 				] }
 				label={'Use Bold'}
 				value={useBold}
-				onChange={onChangeBold}
+				onChange={(useBold) => {
+					onChangeBold((useBold == 'true'))
+				}}
 			/>
 		</div>
 	);
