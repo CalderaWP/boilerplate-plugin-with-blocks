@@ -9,6 +9,6 @@ class PluginNameTest extends TestCase
 
 	public function testSayHi()
 	{
-		$this->assertEquals( 'Hi Roy', (new PluginName())->sayHi());
+		$this->assertEquals('Hi Roy', (new PluginName())->sayHi());
 	}
 }

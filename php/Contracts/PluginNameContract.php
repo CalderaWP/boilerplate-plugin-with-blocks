@@ -3,7 +3,6 @@
 
 namespace calderawp\CalderaPluginBoilerPlate\Contracts;
 
-
 /**
  * Interface ModuleNameContract
  *

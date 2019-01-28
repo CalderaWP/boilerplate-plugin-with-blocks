@@ -1,5 +1,23 @@
 # WordPress Plugin With Blocks Boilerplate
 
+## Included
+
+### For JavaScript Development and Testing
+- [Jest](https://jest.io)
+- [Storybooks](https://storybook.js.org/basics/guide-react/)
+- ES6/ webpack/ Babel and Hot Module Replacemnet (HMR) for development.
+
+### For PHP Development And Testing
+- [phpunit](https://phpunit.de/)
+- [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+- [A PSR-4 Autoloader Provided By Composer](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
+
+## Requirements
+Before using this boilerplate, you must have the following installed:
+- [Git]()
+- [nodejs](https://nodejs.org/en/download/)
+- [yarn](https://yarnpkg.com/)
+- [Composer](https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md)
 
 
 ## PHP
@@ -11,14 +29,11 @@ PHP code should be in the directory `php` and follow the [PSR-4 Standard](https:
 ### Testing
 Tests uses phpunit as the test runner, as well as for assertions and [Mockery](http://docs.mockery.io/en/latest/) for mocking.
 
-* Run unit, integration and acceptance tests
+* Run all php tests
     - `composer tests`
-    
-#### Unit Tests 
 * Unit tests are located in /tests/Unit
 * Run unit tests
     - `composer test:unit`
-#### Integration Tests
 * Integration tests are located in /tests/Integration
 * Run integration tests
     - `composer test:integration`

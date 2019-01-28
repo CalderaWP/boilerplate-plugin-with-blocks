@@ -5,9 +5,7 @@ namespace calderawp\CalderaPluginBoilerPlate;
 
 use calderawp\CalderaPluginBoilerPlate\Contracts\PluginNameContract;
 
-
-
-final class PluginName  implements PluginNameContract
+final class PluginName implements PluginNameContract
 {
 
 
@@ -15,5 +13,4 @@ final class PluginName  implements PluginNameContract
 	{
 		return 'Hi Roy';
 	}
-
 }
