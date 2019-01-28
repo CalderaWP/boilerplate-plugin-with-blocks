@@ -24,11 +24,17 @@ Before using this boilerplate, you must have the following installed:
 ### Gutenberg Setup
 * https://www.ibenic.com/integrating-gutenberg-blocks-in-plugins/ 
 * https://humanmade.com/2018/11/26/hot-module-replacement-for-gutenberg-blocks
+
+### Creating Blocks
+* https://wordpress.org/gutenberg/handbook/designers-developers/developers/tutorials/block-tutorial/writing-your-first-block-type/
+* https://www.ibenic.com/create-gutenberg-block-displaying-post/
+* https://calderaforms.com/2019/01/convert-shortcode-gutenberg-block/
+
 ### Testing Gutenberg and React
 * https://torquemag.io/2018/11/testing-react-components-with-enzyme/
 * https://torquemag.io/2018/11/sharing-react-components-with-gutenberg/
 
-## PHP In WordPress
+### PHP In WordPress
 * https://torquemag.io/2015/01/using-namespaces-wordpress-development/
 * https://torquemag.io/2018/04/advanced-oop-wordpress-part-3-unit-testing-wordpress-rest-api-plugins/
 * https://www.ibenic.com/using-composer-for-libraries-in-wordpress-plugins-or-themes/
