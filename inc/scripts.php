@@ -2,9 +2,9 @@
 /**
  * Register scripts in development and production.
  */
-namespace HMR_Demo\Scripts;
+namespace calderawp\CalderaPluginBoilerPlate\Scripts;
 
-use HMR_Demo\Asset_Loader;
+use calderawp\CalderaPluginBoilerPlate\Asset_Loader;
 
 function setup() {
 	add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\\enqueue_block_editor_assets' );

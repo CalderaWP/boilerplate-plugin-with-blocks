@@ -1,14 +1,13 @@
 {
   "private": true,
-  "name": "wp-block-hmr-demo",
+  "name": "boilerplate-plugin-with-blocks",
   "version": "0.1.0",
-  "description": "A plugin demonstrating block and plugin auto-loading with hot module replacement.",
   "keywords": [
     "wordpress",
     "plugin"
   ],
-  "author": "K Adam White",
-  "license": "(Artistic-2.0 OR GPL-2.0-or-later)",
+  "author": "CalderaWP LLC",
+  "license": "GPL-2.0",
   "scripts": {
     "build": "webpack --config=.config/webpack.config.prod.js",
     "start": "webpack-dev-server --config .config/webpack.config.dev.js",

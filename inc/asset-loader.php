@@ -2,7 +2,7 @@
 /**
  * Manage loading Webpack Dev Server assets.
  */
-namespace HMR_Demo\Asset_Loader;
+namespace calderawp\CalderaPluginBoilerPlate\Asset_Loader;
 
 /**
  * Is this a development environment?
